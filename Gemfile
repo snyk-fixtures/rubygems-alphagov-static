@@ -6,7 +6,7 @@ gem 'unicorn', '4.9.0'
 
 gem 'logstasher', '0.4.8'
 gem 'rack_strip_client_ip', '0.0.1'
-gem 'actionpack-page_caching', '1.0.2'
+gem 'actionpack-page_caching', '1.2.1'
 
 gem 'uglifier', ">= 1.3.0"
 gem 'sass-rails', "5.0.6"
