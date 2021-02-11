@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '4.2.7.1'
+gem 'rails', '6.0.3.5'
 
 gem 'unicorn', '4.9.0'
 
@@ -43,7 +43,7 @@ gem 'plek', '1.11.0'
 gem 'govuk_frontend_toolkit', '~> 5.1.0'
 
 if ENV['GOVUK_TEMPLATE_DEV']
-  gem 'govuk_template', :path => "../govuk_template"
+  gem 'govuk_template', '>= 0.19.0', :path => "../govuk_template"
 else
   gem 'govuk_template', '0.19.0'
 end
