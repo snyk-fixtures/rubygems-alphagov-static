@@ -1,19 +1,19 @@
 source 'https://rubygems.org'
 
-gem 'rails', '4.2.7.1'
+gem 'rails', '6.0.3.5'
 
 gem 'unicorn', '4.9.0'
 
 gem 'logstasher', '0.4.8'
 gem 'rack_strip_client_ip', '0.0.1'
-gem 'actionpack-page_caching', '1.0.2'
+gem 'actionpack-page_caching', '1.2.0'
 
 gem 'uglifier', ">= 1.3.0"
-gem 'sass-rails', "5.0.6"
+gem 'sass-rails', '5.0.8'
 gem 'airbrake', '~> 4.3.1'
 
 gem 'nokogiri', "~> 1.6.6.4"
-gem 'sprockets-rails', "2.3.3" #FIXME: This is temporary, will allow to upgrade rails to 4.2.5.1 to address security fixes without breaking tests http://weblog.rubyonrails.org/2016/1/25/Rails-5-0-0-beta1-1-4-2-5-1-4-1-14-1-3-2-22-1-and-rails-html-sanitizer-1-0-3-have-been-released/
+gem 'sprockets-rails', '2.3.3' #FIXME: This is temporary, will allow to upgrade rails to 4.2.5.1 to address security fixes without breaking tests http://weblog.rubyonrails.org/2016/1/25/Rails-5-0-0-beta1-1-4-2-5-1-4-1-14-1-3-2-22-1-and-rails-html-sanitizer-1-0-3-have-been-released/
 
 group :development do
   gem 'image_optim', '0.17.1'
@@ -33,7 +33,7 @@ group :test do
 end
 
 group :development, :test do
-  gem 'jasmine-rails', '~> 0.10.6'
+  gem 'jasmine-rails', '~> 0.10.8'
   gem 'quiet_assets', '1.1.0'
   gem 'govuk-lint', '~> 0.6.0'
   gem 'pry'
@@ -43,7 +43,7 @@ gem 'plek', '1.11.0'
 gem 'govuk_frontend_toolkit', '~> 5.1.0'
 
 if ENV['GOVUK_TEMPLATE_DEV']
-  gem 'govuk_template', :path => "../govuk_template"
+  gem 'govuk_template', '>= 0.19.0', :path => "../govuk_template"
 else
   gem 'govuk_template', '0.19.0'
 end
