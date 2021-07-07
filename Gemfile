@@ -23,10 +23,10 @@ end
 
 group :test do
   gem 'capybara', '~> 2.5.0'
-  gem 'govuk-content-schema-test-helpers', '~> 1.4'
+  gem 'govuk-content-schema-test-helpers', '~> 1.6', '>= 1.6.0'
   gem 'mocha', '~> 1.1.0', :require => false
   gem 'shoulda'
-  gem 'webmock'
+  gem 'webmock', '>= 1.21.0'
   gem 'test-unit'
   gem 'minitest'
   gem 'minitest-capybara', '~> 0.7.2'
