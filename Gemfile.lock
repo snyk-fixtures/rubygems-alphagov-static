@@ -39,7 +39,8 @@ GEM
       minitest (~> 5.1)
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
-    addressable (2.3.8)
+    addressable (2.8.0)
+      public_suffix (>= 2.0.2, < 5.0)
     airbrake (4.3.1)
       builder
       multi_json
@@ -62,8 +63,8 @@ GEM
       xpath (~> 2.0)
     coderay (1.1.0)
     concurrent-ruby (1.0.2)
-    crack (0.4.2)
-      safe_yaml (~> 1.0.0)
+    crack (0.4.5)
+      rexml
     debug_inspector (0.0.2)
     domain_name (0.5.20161129)
       unf (>= 0.0.5, < 1.0.0)
@@ -80,8 +81,8 @@ GEM
       rest-client (~> 2.0)
     globalid (0.3.7)
       activesupport (>= 4.1.0)
-    govuk-content-schema-test-helpers (1.4.0)
-      json-schema (~> 2.5.1)
+    govuk-content-schema-test-helpers (1.6.1)
+      json-schema (~> 2.8.0)
     govuk-lint (0.6.1)
       rubocop (~> 0.35.0)
       scss_lint (~> 0.44.0)
@@ -90,6 +91,7 @@ GEM
       sass (>= 3.2.0)
     govuk_template (0.19.0)
       rails (>= 3.1)
+    hashdiff (1.0.1)
     http-cookie (1.0.3)
       domain_name (~> 0.5)
     i18n (0.7.0)
@@ -108,8 +110,8 @@ GEM
       railties (>= 3.2.0)
       sprockets-rails
     json (1.8.3)
-    json-schema (2.5.2)
-      addressable (~> 2.3.8)
+    json-schema (2.8.1)
+      addressable (>= 2.4)
     kgio (2.10.0)
     link_header (0.0.8)
     logstash-event (1.1.5)
@@ -148,6 +150,7 @@ GEM
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
       slop (~> 3.4)
+    public_suffix (4.0.6)
     quiet_assets (1.1.0)
       railties (>= 3.1, < 5.0)
     rack (1.6.5)
@@ -187,6 +190,7 @@ GEM
       http-cookie (>= 1.0.2, < 2.0)
       mime-types (>= 1.16, < 4.0)
       netrc (~> 0.8)
+    rexml (3.2.5)
     rubocop (0.35.1)
       astrolabe (~> 1.3)
       parser (>= 2.2.3.0, < 3.0)
@@ -195,7 +199,6 @@ GEM
       ruby-progressbar (~> 1.7)
       tins (<= 1.6.0)
     ruby-progressbar (1.7.5)
-    safe_yaml (1.0.4)
     sass (3.4.22)
     sass-rails (5.0.6)
       railties (>= 4.0.0, < 6)
@@ -238,9 +241,10 @@ GEM
       kgio (~> 2.6)
       rack
       raindrops (~> 0.7)
-    webmock (1.21.0)
+    webmock (3.13.0)
       addressable (>= 2.3.6)
       crack (>= 0.3.2)
+      hashdiff (>= 0.4.0, < 2.0.0)
     xpath (2.0.0)
       nokogiri (~> 1.3)
 
@@ -254,7 +258,7 @@ DEPENDENCIES
   binding_of_caller
   capybara (~> 2.5.0)
   gds-api-adapters (= 38.1.0)
-  govuk-content-schema-test-helpers (~> 1.4)
+  govuk-content-schema-test-helpers (~> 1.6, >= 1.6.0)
   govuk-lint (~> 0.6.0)
   govuk_frontend_toolkit (~> 5.1.0)
   govuk_template (= 0.19.0)
@@ -276,7 +280,7 @@ DEPENDENCIES
   test-unit
   uglifier (>= 1.3.0)
   unicorn (= 4.9.0)
-  webmock
+  webmock (>= 1.21.0)
 
 BUNDLED WITH
-   1.13.7
+   1.17.3
