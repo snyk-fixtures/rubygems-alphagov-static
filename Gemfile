@@ -1,15 +1,15 @@
 source 'https://rubygems.org'
 
-gem 'rails', '4.2.7.1'
+gem 'rails', '6.1.7.3'
 
 gem 'unicorn', '4.9.0'
 
 gem 'logstasher', '0.4.8'
 gem 'rack_strip_client_ip', '0.0.1'
-gem 'actionpack-page_caching', '1.0.2'
+gem 'actionpack-page_caching', '1.2.0'
 
 gem 'uglifier', ">= 1.3.0"
-gem 'sass-rails', "5.0.6"
+gem 'sass-rails', '5.0.8'
 gem 'airbrake', '~> 4.3.1'
 
 gem 'nokogiri', "~> 1.6.6.4"
@@ -33,7 +33,7 @@ group :test do
 end
 
 group :development, :test do
-  gem 'jasmine-rails', '~> 0.10.6'
+  gem 'jasmine-rails', '~> 0.10.8'
   gem 'quiet_assets', '1.1.0'
   gem 'govuk-lint', '~> 0.6.0'
   gem 'pry'
