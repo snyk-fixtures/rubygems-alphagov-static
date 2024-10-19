@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '4.2.7.1'
+gem 'rails', '7.0.0'
 
 gem 'unicorn', '4.9.0'
 
@@ -9,7 +9,7 @@ gem 'rack_strip_client_ip', '0.0.1'
 gem 'actionpack-page_caching', '1.0.2'
 
 gem 'uglifier', ">= 1.3.0"
-gem 'sass-rails', "5.0.6"
+gem 'sass-rails', '6.0.0'
 gem 'airbrake', '~> 4.3.1'
 
 gem 'nokogiri', "~> 1.6.6.4"
@@ -40,7 +40,7 @@ group :development, :test do
 end
 
 gem 'plek', '1.11.0'
-gem 'govuk_frontend_toolkit', '~> 5.1.0'
+gem 'govuk_frontend_toolkit', '~> 6.0.4'
 
 if ENV['GOVUK_TEMPLATE_DEV']
   gem 'govuk_template', :path => "../govuk_template"
