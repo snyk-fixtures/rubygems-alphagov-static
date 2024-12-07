@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '4.2.7.1'
+gem 'rails', '7.0.0'
 
 gem 'unicorn', '4.9.0'
 
@@ -9,10 +9,10 @@ gem 'rack_strip_client_ip', '0.0.1'
 gem 'actionpack-page_caching', '1.0.2'
 
 gem 'uglifier', ">= 1.3.0"
-gem 'sass-rails', "5.0.6"
+gem 'sass-rails', '6.0.0'
 gem 'airbrake', '~> 4.3.1'
 
-gem 'nokogiri', "~> 1.6.6.4"
+gem 'nokogiri', '~> 1.15.7.0'
 gem 'sprockets-rails', "2.3.3" #FIXME: This is temporary, will allow to upgrade rails to 4.2.5.1 to address security fixes without breaking tests http://weblog.rubyonrails.org/2016/1/25/Rails-5-0-0-beta1-1-4-2-5-1-4-1-14-1-3-2-22-1-and-rails-html-sanitizer-1-0-3-have-been-released/
 
 group :development do
@@ -40,7 +40,7 @@ group :development, :test do
 end
 
 gem 'plek', '1.11.0'
-gem 'govuk_frontend_toolkit', '~> 5.1.0'
+gem 'govuk_frontend_toolkit', '~> 6.0.4'
 
 if ENV['GOVUK_TEMPLATE_DEV']
   gem 'govuk_template', :path => "../govuk_template"
