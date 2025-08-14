@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '4.2.7.1'
+gem 'rails', '7.1.5.2'
 
 gem 'unicorn', '4.9.0'
 
@@ -40,11 +40,11 @@ group :development, :test do
 end
 
 gem 'plek', '1.11.0'
-gem 'govuk_frontend_toolkit', '~> 5.1.0'
+gem 'govuk_frontend_toolkit', '~> 5.1.1'
 
 if ENV['GOVUK_TEMPLATE_DEV']
-  gem 'govuk_template', :path => "../govuk_template"
+  gem 'govuk_template', '>= 0.19.1', :path => "../govuk_template"
 else
-  gem 'govuk_template', '0.19.0'
+  gem 'govuk_template', '0.19.1'
 end
 gem 'gds-api-adapters', '38.1.0'
